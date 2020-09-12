@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/****************common css end*******************/
+
+/****************navber css start*******************/
+.navbar {
+    padding: 15px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: all linear .3s;
+}
+.container h4{
+    font-family: 'Playfair Display';
+    font-size: 23px;
+    font-weight: 700;
+    color: #fff;
+}
+.navbg {
+    background: #df74d2;
+    animation: bg 1s;
+}
+
+@keyframes bg {
+    from {
+        top: -100px
+    }
+
+    ,
+    to {
+        top: 0px
+    }
+}
+
+.navbar-light .navbar-nav .active > .nav-link {
+    color: #00e0d0;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #00e0d0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Roboto;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    transition: all linear .4s;
+    position: relative;
+    margin: 10px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:after {
+    position: absolute;
+    content: '';
+    background: #00e0d0;
+    width: 0px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all linear .5s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+/****************navber css end*******************/
+
+/****************banner css start*******************/
+#banner {
+    background: url(../img/banner.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 225px 0px;
+    position: relative;
+}
+
+#banner:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #df74d2;
+    opacity: 0.6;
+}
+
+.b-slider {
+    position: relative;
+    z-index: 999;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 999;
+    padding-bottom: 20px;
+}
+
+.banner-text h1 {
+    font-family: 'Playfair Display';
+    font-size: 55px;
+    font-weight: 900;
+    color: #fff;
+}
+.banner-text h3 {
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.banner-text p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 24px;
+    margin: 0px 275px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.banner-text b {
+    font-family: 'Hammersmith One';
+    font-size: 14px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    border-radius:22px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+.banner-text b:hover {
+    color: #00e0d0;
+}
+
+/****************banner css end*******************/
+
+/****************ABOUT css start*******************/
+#ABOUT{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.s-left h2{
+    font-family: 'Roboto';
+    font-size: 32px;
+    font-weight: 300;
+    color: #010101;
+    padding-top: 20px;
+    text-transform: capitalize;
+}
+.s-left p{
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    color: #010101;
+    padding-top: 20px;
+    text-transform: capitalize;
+    text-align: inherit;
+}
+.s-right {
+    width: 500px;
+    margin: 82px;
+    color: #000;
+}
+.s-right li {
+    
+    margin: 25px 0px 0px 0px;
+}
+.s-right h5{
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: 300;
+    color: #010101;
+    text-transform: capitalize;
+}
+.bar{
+    background: #000;
+    display: block;
+    height: 10px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: 0 0 5px #fff;
+    overflow: hidden;
+}
+.bar span{
+    height: 10px;
+    float:left;
+    background: #01a4ef;
+}
+.web{
+    width: 95%;
+    border-radius: 4px;
+    animation: web 2s
+}
+.html{
+    width: 85%;
+    border-radius: 4px;
+    animation: html 2s
+}
+.bootstrop{
+    width: 80%;
+    border-radius: 4px;
+    animation: bootstrop 2s
+}
+.css{
+    width: 85%;
+    border-radius: 4px;
+    animation: css 2s
+}
+@keyframes web{
+    0%{
+        width: 0%;
+    }
+    100%{
+       width: 95%; 
+    }
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+       width: 85%; 
+    }
+}
+@keyframes bootstrop{
+    0%{
+        width: 0%;
+    }
+    100%{
+       width: 80%; 
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+       width: 85%; 
+    }
+}
+
+/****************ABOUT css end*******************/
+/****************services css end*******************/
+#services {
+    background: #fcf8f9;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+
+.heading h2 {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.heading p {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f2d35;
+    padding-bottom: 20px;
+    position: relative;
+    padding-top: 5px;
+}
+
+
+
+.expe {
+    padding-bottom: 20px;
+    padding-top: 30px
+}
+
+.expe .svg-inline--fa {
+    font-size: 65px;
+    color: #000;
+    margin-bottom: 35px;
+}
+
+.expe h3 {
+    font-family: 'Roboto black';
+    font-size: 14px;
+    font-weight: 300;
+    color: #413d4b;
+    text-transform: capitalize;
+}
+
+.expe p {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    margin: 0px 48px;
+    padding-top: 10px;
+}
+/****************services css end*******************/
+
+/****************testmonial css end*******************/
+#testmonial {
+    background: url(../img/back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 140px;
+    padding-top: 120px;
+    position: relative;
+}
+
+#testmonial:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #050505;
+    opacity: 0.7;
+}
+
+.testmonial-2 {
+    position: relative;
+    z-index: 999;
+}
+
+.st-txt {
+    position: relative;
+    z-index: 999;
+}
+
+.st-txt h4 {
+    font-family: 'Playfair Display';
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.st-txt p {
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 26px;
+    margin: 0px 90px;
+}
+
+.st-txt h2 {
+	font-family: 'Roboto black';
+	font-size: 35px;
+	font-weight: 400;
+	color: #ffffff;
+	text-transform: capitalize;
+    margin-bottom: 25px;
+}
+
+.st-txt h3 {
+    font-family: 'Roboto light';
+    font-size: 36px;
+    font-weight: 300;
+    color: #ffffff;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.st-txt h5 {
+    font-family: 'Roboto light';
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+/****************testmonial css end*******************/
+
+/****************FORM css end*******************/
+#ETC {
+    padding-bottom: 85px;
+    padding-top: 70px;
+}
+
+.design h2 {
+    font-family: 'Playfair Display';
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+    text-align: center;
+    
+}
+
+form [type=text],
+form [type=email] {
+    width: 100%;
+    border: none;
+    margin-bottom: 40px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #020202;
+    border: 1px solid #a09ea5;
+}
+
+form textarea {
+    width: 100%;
+    border: none;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #020202;
+    height: 200px;
+    resize: none;
+    padding-left: 10px;
+    border: 1px solid #a09ea5;
+}
+
+.btnn {
+    font-family: 'Hammersmith One';
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    ;text-transform: capitalize;
+    padding: 15px 32px;
+    border-radius: 1px;
+    cursor: pointer;
+    background: #000;
+    border-radius: 5px;
+    border: none;
+}
+.ETC-Pro h2 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+/****************FORM css end*******************/
+
+/****************Contact css end*******************/
+#Contact {
+    background: url(../img/back2.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 125px;
+    padding-top: 150px;
+    position: relative;
+}
+/*
+#Contact:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #242426;
+    opacity: 0.7;
+} 
+*/
+.Contact-left b {
+    overflow: visible;
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+
+.Contact-left h3 {
+    font-family: 'Roboto black';
+    font-size: 40px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize
+}
+
+.Contact-left p {
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 700;
+	color: #ffffff;
+	padding-top: 12px;
+    text-transform: capitalize;
+}
+
+/****************Contact css end*******************/
+/****************Footer css start*******************/
+#footer{
+    background: #262626;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.foot-i a{
+    overflow: visible;
+    font-size: 75px;
+    color: #fff;
+    margin-bottom: 32px;
+    font-size: 30px;
+    margin: 0px 20px;
+}
+.copy p{
+	font-family: 'Roboto';
+	font-size: 25px;
+	font-weight: 400;
+	color: #ffffff;
+	padding-top: 12px;
+    text-transform: capitalize;
+}
+/****************Footer css end*******************/
+
+/****************back-top css start*******************/
+.back-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999;
+}
+.back-top b {
+	background: purple;
+	line-height: 40px;
+	color: #ffffff;
+	border-radius: 21px;
+	cursor: pointer;
+	padding: 15px;
+	font-size: 12px;
+}
+.back-top i{
+    height: 40px;
+    width: 40px;
+    
+    text-align: center;
+}
+/****************back-top css end*******************/

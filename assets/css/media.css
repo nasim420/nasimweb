@@ -1,0 +1,106 @@
+/********Extra small devices*******************/
+@media (max-width: 575.98px) {
+    .container h4 {
+	font-size: 24px;
+}
+    .navbar-toggler {
+        margin-right: 185px;
+        border-color: none;
+        outline: 0;
+        border: none;
+        color: #fff;
+    }
+    .banner-text h1 {
+	font-size: 28px;
+}
+    .banner-text h3 {
+	font-size: 20px;
+}
+    .banner-text p {
+	margin: 0px 8px;
+}
+    .s-left h2 {
+	font-size: 26px;
+	padding-top: 0px;
+}
+    .s-left p {
+	padding-top: 10px;
+	text-align: justify;
+}
+    .s-right {
+	margin: 0;
+}
+    .st-txt h2 {
+	font-size: 25px;
+	margin-bottom: 14px;
+}
+    .st-txt h4 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+    .st-txt p {
+	margin: 0px 0px;
+}
+    .st-txt h3 {
+	font-size: 25px;
+}
+    .st-txt h5 {
+	font-size: 14px;
+}
+    .foot-i a {
+	font-size: 20px;
+	margin: 0px 12px;
+}
+    .copy p {
+	font-size: 14px;
+	padding-top: 10px;
+}
+}
+
+/*********** Small devices ***************/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .banner-text h1 {
+	font-size: 45px;
+}
+    .banner-text h3 {
+	font-size: 25px;
+}
+    .banner-text p {;
+	margin: 0px 60px;
+}
+    .s-right {
+	margin: 0px;
+}
+    .s-left p {
+	font-size: 15px;
+	line-height: 22px;
+}
+    .copy p {
+	font-size: 24px;
+}
+}
+
+/*********** Medium devices ***************/
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+.expe .svg-inline--fa {
+    font-size: 40px;
+}
+.expe h3 {
+	font-size: 24px;
+	font-weight: 400;
+}
+.expe p {
+	font-size: 14px;
+	margin: 0px 6px;
+	text-align: justify;
+}
+.s-left h2 {
+    text-align: center;
+}
+#ABOUT {
+	padding-bottom: 50px;
+}
+/***********  Large devices***************/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+}
